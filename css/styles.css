@@ -22,6 +22,11 @@ h1 {
   margin:auto;
 }
 
+.tagline {
+  margin-left: 30px;
+  font-weight: bold;
+}
+
 .chalk {
   font-family:'Gloria Hallelujah';
   text-shadow: 0px 0px 3px #000, -1px -1px #000, 1px 1px #000;
@@ -118,10 +123,21 @@ img.grayscale {
   font-size:25px;
 }
 
+.header .back-img-container {
+  background: #000 no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -100;
+  position: absolute;
+}
+
+.header .back-img {
+  opacity: .5;
+}
+
 .header {
   height: 80%;
-  background: #11cc45 url('../img/sportsbarblur.jpg') no-repeat center center;
-  background-size: cover;
 }
 
 .header video {
