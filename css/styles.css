@@ -137,7 +137,7 @@ img.grayscale {
 }
 
 .header {
-  height: 80%;
+  xxxheight: 80%;
 }
 
 .header video {
@@ -165,7 +165,7 @@ img.grayscale {
 }
 
 .featurette {
-  background: #545455;
+  background: #9BBB59;
   padding: 50px 0;
   color: #ffffff;
 }
