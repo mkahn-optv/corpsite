@@ -108,16 +108,23 @@ img.grayscale {
     vertical-align: middle;
     width: 100%;
     padding-top: 4%;
+    color: pink;
 }
 
 .header h1 {
     font-size: 70px;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
-    color: #431a6d;
-    color: #fff;
+    color: pink;
     margin-left: -5px;
     margin-bottom: 5px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.header p {
+    alignment: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    color: white;
 }
 
 .header .lead {
@@ -138,7 +145,7 @@ img.grayscale {
     background-size: cover;
     width: 100%;
     opacity: .5;
-    z-index = -200;
+    z-index: -100;
 }
 
 .header {
