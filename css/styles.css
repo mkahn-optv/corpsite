@@ -1,6 +1,6 @@
 /* -- custom css for Bootstrap 3.x --*/
 /* move special fonts to HTML head for better performance */
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600');
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600");
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 
 html,
@@ -18,6 +18,10 @@ body {
 
 h1 {
     font-size: 45px;
+}
+
+p {
+    color: pink;
 }
 
 .center {
@@ -105,11 +109,14 @@ img.grayscale {
 /*}*/
 
 .vert {
-    vertical-align: middle;
     width: 100%;
     padding-top: 4%;
     color: pink;
+    display: flex;
+    justify-content: center;
 }
+
+
 
 .header h1 {
     font-size: 70px;
@@ -121,9 +128,11 @@ img.grayscale {
 }
 
 .header p {
-    alignment: center;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
     color: white;
 }
 
@@ -150,6 +159,7 @@ img.grayscale {
 
 .header {
     height: 100%;
+    vertical-align: middle;
 }
 
 .header video {
@@ -229,6 +239,10 @@ img.grayscale {
 
 footer {
     padding: 100px 0;
+}
+
+video {
+    width: 150%;
 }
 
 /* -- end custom css for Bootstrap 3.x --*/
