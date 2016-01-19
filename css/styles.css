@@ -12,6 +12,10 @@ body {
 
 /* fix bs3 horizontal scrollbar bug */
 
+.container {
+
+}
+
 .row {
     margin: 0;
     padding: 0;
@@ -22,6 +26,7 @@ body {
     color: white;
     font-weight: 100;
     text-align: center;
+    margin-bottom: 30px; /* added this because now the header was shrinking to the bottom of the text, this makes it more comfortable */
 }
 
 p {
@@ -156,7 +161,7 @@ img.grayscale {
 .header .back-img-container {
     background: #000 no-repeat center center;
     background-size: cover;
-    height: 100%;
+    xxxheight: 100%; /* EA: this needed to be removed to work with header */
     width: 100%;
     z-index: -100;
     position: absolute;
@@ -171,7 +176,7 @@ img.grayscale {
 }
 
 .header {
-    height: 100%;
+    xxxheight: 100%; /* EA: this was causing the text to overflow and is not needed */
     vertical-align: middle;
 }
 
@@ -264,6 +269,5 @@ footer {
 .panel-body {
     align-content: stretch;
 }
-
 
 /* -- end custom css for Bootstrap 3.x --*/
