@@ -1,6 +1,6 @@
 /* -- custom css for Bootstrap 3.x --*/
 /* move special fonts to HTML head for better performance */
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,600");
 @import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah");
 
 html,
@@ -11,13 +11,17 @@ body {
 }
 
 /* fix bs3 horizontal scrollbar bug */
+
 .row {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
-h1 {
-    font-size: 45px;
+.big-text {
+    font-size: 3em;
+    color: white;
+    font-weight: 100;
+    text-align: center;
 }
 
 p {
@@ -25,7 +29,8 @@ p {
 }
 
 .center {
-    margin: auto;
+    position: relative;
+    align-content: center;
 }
 
 .tagline {
@@ -35,6 +40,7 @@ p {
 
 .chalk {
     font-family: 'Gloria Hallelujah';
+    color: white;
     text-shadow: 0 0 3px #000, -1px -1px #000, 1px 1px #000;
 }
 
@@ -64,13 +70,21 @@ img.grayscale {
     background-color: #000000;
 
 }
-
+.about{
+    padding-top: 0;
+}
 .header .btn-lg {
     font-size: 28px;
     border-color: #eeeeee;
     padding: 15px;
     background-color: transparent;
     color: #ffffff;
+}
+.header .embed-responsive {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50%;
+    width: 60%;
 }
 
 .header .btn-lg:hover {
@@ -111,7 +125,6 @@ img.grayscale {
 .vert {
     width: 100%;
     padding-top: 4%;
-    color: pink;
     display: flex;
     justify-content: center;
 }
@@ -121,7 +134,6 @@ img.grayscale {
 .header h1 {
     font-size: 70px;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
-    color: pink;
     margin-left: -5px;
     margin-bottom: 5px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -150,6 +162,7 @@ img.grayscale {
     position: absolute;
 }
 
+
 .header .back-img {
     background-size: cover;
     width: 100%;
@@ -162,9 +175,7 @@ img.grayscale {
     vertical-align: middle;
 }
 
-.header video {
-    border: 10px solid black
-}
+
 
 .dropshadow {
     text-shadow: 1px 1px 2px rgb(29, 29, 29);
@@ -172,13 +183,17 @@ img.grayscale {
 }
 
 .blurb {
-    padding: 120px 0;
+    padding: 20px 20px;
     background-color: #1d1d1d;
     color: white;
 }
 
 .blurb .panel {
     background-color: transparent;
+}
+
+.blurb .img-responsive{
+    width: 40%;
 }
 
 .bright {
@@ -212,6 +227,7 @@ img.grayscale {
     font-size: 68px;
 }
 
+
 .callout {
     color: #ffffff;
     padding-top: 7%;
@@ -228,6 +244,10 @@ img.grayscale {
     padding: 50px 0;
 }
 
+.gallery .panel-heading {
+    background-color: lightgoldenrodyellow;
+}
+
 .call-to-action {
     background: #eeeeee;
     padding: 50px 0;
@@ -241,8 +261,9 @@ footer {
     padding: 100px 0;
 }
 
-video {
-    width: 150%;
+.panel-body {
+    align-content: stretch;
 }
+
 
 /* -- end custom css for Bootstrap 3.x --*/
