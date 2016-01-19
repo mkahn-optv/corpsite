@@ -178,6 +178,7 @@ img.grayscale {
 .header {
     xxxheight: 100%; /* EA: this was causing the text to overflow and is not needed */
     vertical-align: middle;
+    min-height: 100%;
 }
 
 
