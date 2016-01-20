@@ -198,7 +198,8 @@ img.grayscale {
 }
 
 .blurb .img-responsive{
-    width: 40%;
+    width: 30%;
+    display: inline-block;
 }
 
 .bright {
@@ -270,3 +271,7 @@ footer {
     align-content: stretch;
 }
 /* -- end custom css for Bootstrap 3.x --*/
+
+/*.fadein { position:relative; height:332px; width:500px }
+.fadein img { position:absolute; left:0; top:0; transition:opacity 1s; opacity:1; }
+.fadein img.is-hidden { opacity:0; }*/
