@@ -161,7 +161,7 @@ img.grayscale {
 .header .back-img-container {
     background: #000 no-repeat center center;
     background-size: cover;
-    xxxheight: 100%; /* EA: this needed to be removed to work with header */
+    min-height: 100%; /* EA: this needed to be changed so that the background remained consistent with the header */
     width: 100%;
     z-index: -100;
     position: absolute;
@@ -178,7 +178,6 @@ img.grayscale {
 .header {
     xxxheight: 100%; /* EA: this was causing the text to overflow and is not needed */
     vertical-align: middle;
-    min-height: 100%;
 }
 
 
