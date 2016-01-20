@@ -246,7 +246,7 @@ img.grayscale {
 }
 
 .gallery {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .gallery .panel-heading {
@@ -269,5 +269,4 @@ footer {
 .panel-body {
     align-content: stretch;
 }
-
 /* -- end custom css for Bootstrap 3.x --*/
