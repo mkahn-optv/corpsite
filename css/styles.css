@@ -203,7 +203,8 @@ img.grayscale {
 }
 
 .bright {
-    background: #7fbbda  url("img/sportsbarblur.jpg") no-repeat center center fixed;
+    xxbackground: #7fbbda  url("../img/sportsbarblur.jpg") no-repeat center;
+    background-color: transparent;
     color: #fff;
 }
 
@@ -264,6 +265,7 @@ img.grayscale {
 
 .gallery {
     padding: 30px 0;
+    background-color: white;
 }
 
 .gallery .panel-heading {
@@ -281,6 +283,7 @@ img.grayscale {
 
 footer {
     padding: 100px 0;
+    background-color: white;
 }
 
 .panel-body {
