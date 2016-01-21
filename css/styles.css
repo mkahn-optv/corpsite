@@ -224,7 +224,12 @@ img.grayscale {
     margin-bottom: 15px;
 }
 
-.featurette-item > i {
+.featurette-item > a {
+    height: 100%;
+    width: 100%;
+}
+
+.featurette-item .icon-button {
     border: 3px solid #ffffff;
     border-radius: 50%;
     display: inline-block;
@@ -236,10 +241,14 @@ img.grayscale {
     text-align: center;
 }
 
-.featurette-item > i:hover {
+.featurette-item .icon-button:hover {
     font-size: 68px;
 }
 
+.featurette-item a {
+    text-decoration: none;
+    color: white;
+}
 
 .callout {
     color: #ffffff;
@@ -278,7 +287,3 @@ footer {
     align-content: stretch;
 }
 /* -- end custom css for Bootstrap 3.x --*/
-
-/*.fadein { position:relative; height:332px; width:500px }
-.fadein img { position:absolute; left:0; top:0; transition:opacity 1s; opacity:1; }
-.fadein img.is-hidden { opacity:0; }*/
