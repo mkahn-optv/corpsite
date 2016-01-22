@@ -164,13 +164,13 @@ img.grayscale {
     min-height: 100%; /* EA: this needed to be changed so that the background remained consistent with the header */
     width: 100%;
     z-index: -100;
-    position: absolute;
 }
 
 
 .header .back-img {
     background-size: cover;
-    width: 100%;
+    min-width: 100%;
+    xxheight: 100%;
     opacity: .5;
     z-index: -100;
 }
@@ -178,6 +178,7 @@ img.grayscale {
 .header {
     xxxheight: 100%; /* EA: this was causing the text to overflow and is not needed */
     vertical-align: middle;
+    overflow-x: hidden;
 }
 
 
@@ -208,12 +209,26 @@ img.grayscale {
     color: #fff;
 }
 
-.row-eq-height {
+/*.row-eq-height {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
+    display:         flex;
 }
+
+.row-eq-height [class*="col-"] {
+    border: 4px solid blue;
+    height: 100%;
+}
+
+.row-eq-height .panel{
+    height: 100%;
+    border: 4px solid orange;
+}
+
+.row-eq-height .panel-body{
+    height: 100%;
+}*/
 
 .featurette {
     background: #9BBB59;
@@ -288,5 +303,15 @@ footer {
 
 .panel-body {
     align-content: stretch;
+}
+
+.light-panel {
+    border: none;
+}
+
+.light-panel > .panel-heading {
+    font-size: 30px;
+    color: #3c763d;
+    background-color: transparent;
 }
 /* -- end custom css for Bootstrap 3.x --*/
