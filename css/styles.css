@@ -304,4 +304,14 @@ footer {
 .panel-body {
     align-content: stretch;
 }
+
+.light-panel {
+    border: none;
+}
+
+.light-panel > .panel-heading {
+    font-size: 30px;
+    color: #3c763d;
+    background-color: transparent;
+}
 /* -- end custom css for Bootstrap 3.x --*/
