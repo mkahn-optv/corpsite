@@ -315,3 +315,7 @@ footer {
     background-color: transparent;
 }
 /* -- end custom css for Bootstrap 3.x --*/
+
+.black-text {
+    color: black;
+}
