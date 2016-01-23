@@ -29,9 +29,6 @@ body {
     margin-bottom: 30px; /* added this because now the header was shrinking to the bottom of the text, this makes it more comfortable */
 }
 
-p {
-    color: pink;
-}
 
 .center {
     position: relative;
