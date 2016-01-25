@@ -29,9 +29,6 @@ body {
     margin-bottom: 30px; /* added this because now the header was shrinking to the bottom of the text, this makes it more comfortable */
 }
 
-p {
-    color: pink;
-}
 
 .center {
     position: relative;
@@ -315,3 +312,7 @@ footer {
     background-color: transparent;
 }
 /* -- end custom css for Bootstrap 3.x --*/
+
+.black-text {
+    color: black;
+}
