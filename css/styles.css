@@ -87,6 +87,9 @@ img.grayscale {
     margin-right: auto;
     padding-bottom: 50%;
     width: 60%;
+    transition: width .5s, transform .5s;
+    -webkit-transition: width .5s, -webit-transform .5s;
+
 }
 
 .header .btn-lg:hover {
@@ -315,4 +318,17 @@ footer {
 
 .black-text {
     color: black;
+}
+
+@media screen and (max-width: 840px){
+    .falloutArrow {
+        display: none !important;
+    }
+    .header .embed-responsive {
+        width: 80%;
+        margin-top: 10px;
+    }
+    .big-text {
+        font-size: 1.1em;
+    }
 }
