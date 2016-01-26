@@ -1,20 +1,49 @@
 /* -- custom css for Bootstrap 3.x --*/
-
 /* move special fonts to HTML head for better performance */
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600');
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah");
 
 html,
 body {
-  height: 100%;
-  width: 100%;
-  font-family:'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* fix bs3 horizontal scrollbar bug */
-.row { margin: 0; padding: 0 }
 
-h1 {
-  font-size:45px; 
+.container {
+
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.big-text {
+    font-size: 3em;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 30px; /* added this because now the header was shrinking to the bottom of the text, this makes it more comfortable */
+}
+
+
+.center {
+    position: relative;
+    align-content: center;
+}
+
+.tagline {
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.chalk {
+    font-family: 'Gloria Hallelujah';
+    color: white;
+    text-shadow: 0 0 3px #000, -1px -1px #000, 1px 1px #000;
 }
 
 img.grayscale {
@@ -24,169 +53,282 @@ img.grayscale {
 }
 
 .icon-bar {
-   background-color:#fff;
+    background-color: #fff;
 }
 
 .scroll-down a, .scroll-top a {
-   color:#ffffff;
+    color: #ffffff;
 }
 
 .scroll-down {
-   position:fixed;
-   bottom:20%;
-   right:0%;
-   color:#f9f9f9;
+    position: fixed;
+    bottom: 20%;
+    right: 0;
+    color: #f9f9f9;
 }
 
 .scroll-top {
-  /*background-color:#33ee67;*/
+    /*background-color:#33ee67;*/
     background-color: #000000;
 
 }
-
+.about{
+    padding-top: 0;
+}
 .header .btn-lg {
-   font-size:28px;
-   border-color:#eeeeee;
-   padding:15px;
-   background-color:transparent;
-   color:#ffffff;
+    font-size: 28px;
+    border-color: #eeeeee;
+    padding: 15px;
+    background-color: transparent;
+    color: #ffffff;
+}
+.header .embed-responsive {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50%;
+    width: 60%;
+    transition: width .5s, transform .5s;
+    -webkit-transition: width .5s, -webit-transform .5s;
+
 }
 
 .header .btn-lg:hover {
-   background-color:#eeeeee;
-   color:#777777;
+    background-color: #eeeeee;
+    color: #777777;
 }
 
 .navbar a {
-  color:#fff;
+    color: #fff;
 }
 
 .navbar-bold.affix {
-  background-color: #4e4d4f;
+    background-color: #4e4d4f;
 }
 
 .navbar-bold {
-  background-color: #5a5d5b;
-  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: #5a5d5b;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .navbar-bold li a:hover, .navbar-bold li.active {
-  background-color: #4c5052;
+    background-color: #4c5052;
 }
 
 /*.navbar-bold.affix {*/
-  /*background-color:#33ee67;*/
+/*background-color:#33ee67;*/
 /*}*/
 
 /*.navbar-bold {*/
-  /*background-color:#11cc45;*/
-  /*font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;*/
+/*background-color:#11cc45;*/
+/*font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;*/
 /*}*/
 
 /*.navbar-bold li a:hover, .navbar-bold li.active {*/
-  /*background-color:#22dd56;*/
+/*background-color:#22dd56;*/
 /*}*/
 
 .vert {
-  vertical-align: middle;
-  width:100%;
-  padding-top:4%;
+    width: 100%;
+    padding-top: 4%;
+    display: flex;
+    justify-content: center;
 }
 
+
+
 .header h1 {
-  font-size:110px;
-  -webkit-text-stroke: 1px rgba(0,0,0,0.1);
-  color:#431a6d;
-  color:#fff;
-  margin-left:-5px;
-  margin-bottom:5px;
-  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 70px;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+    margin-left: -5px;
+    margin-bottom: 5px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.header p {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    color: white;
 }
 
 .header .lead {
-  color:#eeeeee;
-  font-size:25px;
+    color: #eeeeee;
+    font-size: 25px;
+}
+
+.header .back-img-container {
+    background: #000 no-repeat center center;
+    background-size: cover;
+    min-height: 100%; /* EA: this needed to be changed so that the background remained consistent with the header */
+    width: 100%;
+    z-index: -100;
+}
+
+
+.header .back-img {
+    background-size: cover;
+    min-width: 100%;
+    xxheight: 100%;
+    opacity: .5;
+    z-index: -100;
 }
 
 .header {
-  height: 80%;
-  background: #11cc45 url('../img/sportsbarblur.jpg') no-repeat center center;
-  background-size: cover;
+    xxxheight: 100%; /* EA: this was causing the text to overflow and is not needed */
+    vertical-align: middle;
+    overflow-x: hidden;
 }
 
+
+
 .dropshadow {
-  text-shadow: 1px 1px 2px rgb(29, 29, 29);
+    text-shadow: 1px 1px 2px rgb(29, 29, 29);
 
 }
 
 .blurb {
-  padding: 120px 0;
-  background-color: #1d1d1d;
-  color: white;
+    padding: 20px 20px;
+    background-color: #1d1d1d;
+    color: white;
 }
 
 .blurb .panel {
-  background-color:transparent;
+    background-color: transparent;
+}
+
+.blurb .img-responsive{
+    width: 30%;
+    display: inline-block;
 }
 
 .bright {
-  background: #7fbbda url('http://www.bootply.com/assets/example/bg_suburb.jpg') no-repeat center center fixed; 
-  color:#fff;
+    xxbackground: #7fbbda  url("../img/sportsbarblur.jpg") no-repeat center;
+    background-color: transparent;
+    color: #fff;
 }
 
+/*.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+
+.row-eq-height [class*="col-"] {
+    border: 4px solid blue;
+    height: 100%;
+}
+
+.row-eq-height .panel{
+    height: 100%;
+    border: 4px solid orange;
+}
+
+.row-eq-height .panel-body{
+    height: 100%;
+}*/
+
 .featurette {
-  background: #545455;
-  padding: 50px 0;
-  color: #ffffff;
+    background: #9BBB59;
+    padding: 50px 0;
+    color: #ffffff;
 }
 
 .featurette-item {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
-.featurette-item > i {
-  border: 3px solid #ffffff;
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 56px;
-  width: 140px;
-  height: 140px;
-  line-height: 136px;
-  vertical-align: middle; 
-  text-align: center;
+.featurette-item > a {
+    height: 100%;
+    width: 100%;
 }
 
-.featurette-item > i:hover {
-  font-size: 68px;
+.featurette-item .icon-button {
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 56px;
+    width: 140px;
+    height: 140px;
+    line-height: 136px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.featurette-item .icon-button:hover {
+    font-size: 68px;
+}
+
+.featurette-item a {
+    text-decoration: none;
+    color: white;
 }
 
 .callout {
-  color: #ffffff;
-  padding-top:7%;
-  height: 100%;
-  width: 100%;
-  background: url('../img/uglybar.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    color: #ffffff;
+    padding-top: 7%;
+    height: 100%;
+    width: 100%;
+    background: url('../img/uglybar.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .gallery {
-  padding: 50px 0;
+    padding: 30px 0;
+    background-color: white;
+}
+
+.gallery .panel-heading {
+    background-color: lightgoldenrodyellow;
 }
 
 .call-to-action {
-  background: #eeeeee;
-  padding: 50px 0;
+    background: #eeeeee;
+    padding: 50px 0;
 }
 
 .call-to-action .btn {
-  margin: 10px;
+    margin: 10px;
 }
 
 footer {
-  padding: 100px 0;
+    padding: 100px 0;
+    background-color: white;
 }
 
+.panel-body {
+    align-content: stretch;
+}
+
+.light-panel {
+    border: none;
+}
+
+.light-panel > .panel-heading {
+    font-size: 30px;
+    color: #3c763d;
+    background-color: transparent;
+}
 /* -- end custom css for Bootstrap 3.x --*/
+
+.black-text {
+    color: black;
+}
+
+@media screen and (max-width: 840px){
+    .falloutArrow {
+        display: none !important;
+    }
+    .header .embed-responsive {
+        width: 80%;
+        margin-top: 10px;
+    }
+    .big-text {
+        font-size: 1.1em;
+    }
+}
